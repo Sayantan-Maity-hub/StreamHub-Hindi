@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>StreamHub Hindi — Catalog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">
+      <img src="details/Images/logo.png" alt="StreamHub Hindi Logo" />
+      <h1 class="site-title">StreamHub Hindi</h1>
+    </div>
+
+    <div class="category-bar">
+      <button data-category="all" class="active">All</button>
+      <button data-category="movie">Movies</button>
+      <button data-category="anime">Anime</button>
+      <button data-category="drama">Drama</button>
+    </div>
+  </div>
+</header>
+
+
+
+
+  <!-- Hero / Intro Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Welcome Moulina to StreamHub Hindi</h2>
+      <p>Discover Hindi-dubbed anime, K-dramas, and movies — all beautifully organized.  
+      Use the search below to quickly find your favorites.</p>
+
+      <div class="controls hero-search">
+  <input id="searchInput" type="search" placeholder="Search by title..." aria-label="Search by title">
+  <button id="searchBtn" class="search-btn">Search</button>
+</div>
+
+  </section>
+
+  <main class="container main">
+    <section id="cards" class="cards-grid" aria-live="polite"></section>
+
+    <div class="pagination" id="pagination">
+      <button id="prevBtn" class="page-btn">Prev</button>
+      <div id="pageNumbers" class="page-numbers"></div>
+      <button id="nextBtn" class="page-btn">Next</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>StreamHub Hindi — demo template. Do not host copyrighted material.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

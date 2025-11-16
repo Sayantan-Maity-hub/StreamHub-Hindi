@@ -1,0 +1,220 @@
+/* === Base === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #e0f7ff;
+  color: #023e8a;
+}
+
+/* === Header === */
+.site-header {
+  background: linear-gradient(90deg, #0077b6, #00b4d8, #90e0ef);
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;              /* Adjust size as needed */
+  height: 60px;
+  border-radius: 50%;       /* Makes it circular */
+  object-fit: cover;        /* Ensures it fills the circle */
+  background-color: white;  /* For white background if needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Optional soft glow */
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+}
+
+.site-title {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.back-btn {
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/* === Banner === */
+.banner {
+  position: relative;
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 119, 182, 0.5);
+}
+
+.banner-content {
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner-content h1 {
+  font-size: 2.4em;
+  margin-bottom: 10px;
+}
+
+.meta {
+  font-size: 0.95em;
+  color: #caf0f8;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+}
+
+/* === Sections === */
+section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+h2 {
+  color: #0077b6;
+  border-left: 5px solid #00b4d8;
+  padding-left: 10px;
+}
+
+.storyline p, .cast ul {
+  color: #023e8a;
+  line-height: 1.6;
+}
+
+.cast ul {
+  list-style-type: square;
+  margin-left: 25px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+.image-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* === Download Section === */
+.download-section .btn {
+  margin: 10px 10px 0 0;
+}
+
+/* === Related Section === */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.card {
+  background: #caf0f8;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #023e8a;
+}
+
+.card p {
+  color: #0077b6;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 6px 12px;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9em;
+  transition: 0.3s;
+}
+.btn-small:hover {
+  background: linear-gradient(90deg, #00b4d8, #0077b6);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background: #0077b6;
+  color: white;
+  padding: 15px 0;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .banner {
+    height: 280px;
+  }
+  .banner-content h1 {
+    font-size: 1.6em;
+  }
+}
