@@ -80,8 +80,8 @@ function renderCards(){
     const dlBtn = card.querySelector('.btn');
     dlBtn.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent triggering card click
-      if(p.link){
-        window.location.href = p.link;
+      if(p.download_link){
+        window.location.href = p.download_link;
       } else {
         alert('No details page. Add "link" in data.json');
       }
@@ -89,8 +89,8 @@ function renderCards(){
 
     // --- CLICK ENTIRE CARD ---
     card.addEventListener('click', () => {
-      if (p.link) {
-        window.location.href = p.link;
+      if (p.download_link) {
+        window.location.href = p.download_link;
       }
     });
 
